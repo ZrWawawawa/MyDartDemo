@@ -41,7 +41,12 @@ Widget build(BuildContext contest){
   title:Text(widget.title),),
   body:Center(child:Column(mainAxisAlignment:MainAxisAlignment.center,children: <Widget>[const Text('You have pushed button this many times:',),
   Text('$_counter',
-  style:Theme.of(context).textTheme.headlineMedium,),],),),
+  style:Theme.of(context).textTheme.headlineMedium,),
+  const SizedBox(height:20),
+  ElevatedButton(onPressed: (){}, child: const Text('字蕊'),),
+  const SizedBox(height:10),
+  ElevatedButton(onPressed:(){}, child: const Text('2021112083'),),
+  ],),),
   floatingActionButton: FloatingActionButton(
     onPressed:_incrementCounter,
     tooltip:'Increment',
